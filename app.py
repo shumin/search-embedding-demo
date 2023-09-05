@@ -26,7 +26,7 @@ with tab1:
         df['distances'] = distances_from_embeddings(query_embedding = query_embeds, embeddings = df['embeddings'])
 
         sorted = df.sort_values('distances', ascending=True).head(10)
-        st.dataframe(sorted, hide_index=True, column_order=['title', 'url'])
+        st.dataframe(sorted, hide_index=True, column_order=['title', 'url', 'distances'])
 
 
 with tab2:
@@ -34,7 +34,7 @@ with tab2:
     col1, col2 = st.columns(2)
 
     with col1:
-        "The 1000 podcast in the database"
+        "The list of podcasts in the database"
         st.dataframe(df, column_order=['title', 'standFirst'])
 
     with col2:
