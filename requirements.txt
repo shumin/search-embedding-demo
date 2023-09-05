@@ -1,0 +1,9 @@
+openai
+pandas==1.5.2
+tiktoken==0.1.2
+matplotlib==3.6.3
+plotly==5.12.0
+scipy==1.10.0
+scikit-learn==1.2.0
+
+streamlit
